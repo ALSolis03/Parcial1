@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Inyección SQL</title>
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="title">Amenazas Cibernéticas Comunes</h1>
+    </header>
+
+    <div class="main">
+      <nav class="content-navbar">
+        <p>Tabla de contenido</p>
+        <ul>
+          <li><a href="./home.html" class="inactive">Introducción</a></li>
+          <li><a href="./malware.html" class="inactive">Malware</a></li>
+          <li><a href="./phishing.html" class="inactive">Phishing</a></li>
+          <li><a href="./injection.html" class="inactive">Inyección SQL</a></li>
+          <li><a href="./ddos.html" class="inactive">DDoS</a></li>
+        </ul>
+      </nav>
+
+      <section class="content">
+          <h2 class="subtitle">Inyección SQL: Explotando Vulnerabilidades en Bases de Datos</h2>
+          <br>
+          <p class="content-text">La Inyección SQL es una de las amenazas cibernéticas más antiguas y persistentes que enfrentan los sistemas basados en bases de datos. Esta técnica de ataque se aprovecha de vulnerabilidades en aplicaciones web que interactúan con bases de datos, permitiendo a los atacantes ejecutar comandos SQL maliciosos de forma no autorizada. A través de esta explotación, los ciberdelincuentes pueden acceder, modificar o eliminar datos almacenados en la base de datos, lo que puede llevar a la pérdida de información confidencial o incluso al compromiso total del sistema.
+          </p>
+          <br>
+          <img src="img/SQL.png" alt="" class="content-img">
+          <br>
+          <h3>¿Cómo Funciona la Inyección SQL?</h3>
+          <br>
+          <p class="content-text">La Inyección SQL se lleva a cabo cuando un atacante ingresa datos maliciosos en campos de entrada de una aplicación web que interactúa con una base de datos. Estos campos suelen ser parte de formularios de búsqueda, inicio de sesión o cualquier otra interfaz de usuario que recopile información y la procese en la base de datos. Si la aplicación no está debidamente protegida, los comandos SQL maliciosos pueden ser ejecutados como parte de la consulta, permitiendo al atacante realizar acciones no autorizadas en la base de datos.
+          </p>
+          <br>
+          <h3>Consecuencias de la Inyección SQL</h3>
+          <br>
+          <p class="content-text">Las consecuencias de un ataque de Inyección SQL pueden ser devastadoras. Los atacantes pueden acceder a información confidencial, como datos de usuarios, contraseñas, números de tarjetas de crédito y otros registros sensibles. Además, pueden modificar o eliminar datos de la base de datos, lo que puede llevar a la corrupción de datos o al mal funcionamiento de la aplicación.
+          </p>
+          <br>
+          <h3>¿Cómo protegerse de Inyección SQL?</h3>
+          <br>
+          <ul style="margin-left: 20px;">
+            <li>Validación y saneamiento de datos: Todas las entradas de usuario deben ser validadas y "saneadas" antes de ser utilizadas en consultas SQL. Esto implica asegurarse de que los datos ingresados por el usuario no contengan comandos SQL maliciosos.</li>
+            <li>Utilizar consultas parametrizadas: En lugar de concatenar valores directamente en las consultas SQL, se deben utilizar consultas parametrizadas, que son más seguras y evitan la Inyección SQL.</li>
+            <li>Actualizar y parchear software: Mantener el software y los sistemas actualizados con los últimos parches de seguridad es esencial para cerrar las posibles brechas de seguridad que podrían ser explotadas.</li>
+            <li>Auditoría y monitorización: Implementar un sistema de auditoría y monitorización puede ayudar a detectar y responder rápidamente a intentos de Inyección SQL y otros ataques.</li>
+          </ul>
+      </section>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+          <div class="copyright">
+            <p>&copy; 2023  Cortéz</p>
+          </div>
+          <div class="contact">
+            <p>Contacto: <a href="mailtocortez@utp.ac.pa">cortez@utp.ac.pa</a> | Teléfono: 6000-0000</p>
+          </div>
+        </div>
+    </footer>
+        
+  </body>
+</html>
